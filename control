@@ -1,5 +1,5 @@
 Package: pulseaudio-sennheiser-gsp670
-Version: 1.0
+Version: 1.1
 Maintainer: Szabolcs Szőke <szszoke.code@gmail.com>
 Homepage: https://github.com/szszoke/sennheiser-gsp670-pulseaudio-profile
 Architecture: all
