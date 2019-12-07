@@ -1,0 +1,8 @@
+#!/bin/bash
+
+prefix=$([ "$1" == "" ] && echo "/" || echo "$1")
+
+cp 91-pulseaudio-sennheiser-gsp670.rules ${prefix}etc/udev/rules.d/
+cp sennheiser-gsp670-usb-audio.conf ${prefix}usr/share/pulseaudio/alsa-mixer/profile-sets/
+cp sennheiser-gsp670-output-main.conf ${prefix}usr/share/pulseaudio/alsa-mixer/paths/
+cp sennheiser-gsp670-output-comm.conf ${prefix}usr/share/pulseaudio/alsa-mixer/paths/

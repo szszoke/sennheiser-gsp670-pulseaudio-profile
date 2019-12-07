@@ -1,0 +1,8 @@
+Package: pulseaudio-sennheiser-gsp670
+Version: 1.0
+Maintainer: Szabolcs Szőke <szszoke.code@gmail.com>
+Homepage: https://github.com/szszoke/sennheiser-gsp670-pulseaudio-profile
+Architecture: all
+Depends: pulseaudio, udev
+Section: sound
+Description: Pulseaudio configuration for the Sennheiser GSP670 wireless gaming headset
