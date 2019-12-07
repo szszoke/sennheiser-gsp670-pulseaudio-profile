@@ -1,0 +1,2 @@
+ATTRS{idVendor}=="1395", ATTRS{idProduct}=="0089", ENV{PULSE_PROFILE_SET}="sennheiser-gsp670-usb-audio.conf"
+ATTRS{idVendor}=="1395", ATTRS{idProduct}=="008a", ENV{PULSE_PROFILE_SET}="sennheiser-gsp670-usb-audio.conf"
