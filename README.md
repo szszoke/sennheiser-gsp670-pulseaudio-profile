@@ -1,4 +1,4 @@
-# Sennheiser GSP 670 Pulseaudio profile
+# Sennheiser GSP 670 PulseAudio profile
 
 Product page: https://en-us.sennheiser.com/gaming-headset-wireless-gsp-670
 

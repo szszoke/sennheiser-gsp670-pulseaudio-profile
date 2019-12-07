@@ -5,4 +5,4 @@ Homepage: https://github.com/szszoke/sennheiser-gsp670-pulseaudio-profile
 Architecture: all
 Depends: pulseaudio, udev
 Section: sound
-Description: Pulseaudio configuration for the Sennheiser GSP670 wireless gaming headset
+Description: PulseAudio configuration for the Sennheiser GSP670 wireless gaming headset
