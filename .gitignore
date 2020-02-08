@@ -1,1 +1,6 @@
 /build/
+/pkg/
+/src/
+
+*.deb
+*.pkg.tar.xz
