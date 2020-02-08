@@ -1,7 +1,7 @@
 # Maintainer: Szabolcs Szőke <szszoke[dot]code[at]gmail[dot]com>
 
 pkgname=sennheiser-gsp670-pulseaudio-profile
-pkgver=1.1.r3.g627a636
+pkgver=1.2
 pkgrel=1
 pkgdesc="PulseAudio configuration for the Sennheiser GSP670 wireless gaming headset"
 arch=("any")
