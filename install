@@ -2,8 +2,19 @@
 
 prefix=$([ "$1" == "" ] && echo "/" || echo "$1")
 
+# copy udev rule
 cp 91-pulseaudio-sennheiser-gsp670.rules ${prefix}etc/udev/rules.d/
-cp sennheiser-gsp670-usb-audio.conf ${prefix}usr/share/alsa-card-profile/mixer/profile-sets/
+
+# copy PA profiles to old location
+cp sennheiser-gsp670-usb-dongle-audio.conf ${prefix}usr/share/pulseaudio/alsa-mixer/profile-sets/
+cp sennheiser-gsp670-usb-headset-audio.conf ${prefix}usr/share/pulseaudio/alsa-mixer/profile-sets/
+cp sennheiser-gsp670-output-main.conf ${prefix}usr/share/pulseaudio/alsa-mixer/paths/
+cp sennheiser-gsp670-output-comm.conf ${prefix}usr/share/pulseaudio/alsa-mixer/paths/
+cp sennheiser-gsp670-input-comm.conf ${prefix}usr/share/pulseaudio/alsa-mixer/paths/
+
+# copy PA profiles to new location
+cp sennheiser-gsp670-usb-dongle-audio.conf ${prefix}usr/share/alsa-card-profile/mixer/profile-sets/
+cp sennheiser-gsp670-usb-headset-audio.conf ${prefix}usr/share/alsa-card-profile/mixer/profile-sets/
 cp sennheiser-gsp670-output-main.conf ${prefix}usr/share/alsa-card-profile/mixer/paths/
 cp sennheiser-gsp670-output-comm.conf ${prefix}usr/share/alsa-card-profile/mixer/paths/
 cp sennheiser-gsp670-input-comm.conf ${prefix}usr/share/alsa-card-profile/mixer/paths/

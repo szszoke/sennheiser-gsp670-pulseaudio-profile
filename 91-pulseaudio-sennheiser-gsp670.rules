@@ -1,2 +1,6 @@
-ATTRS{idVendor}=="1395", ATTRS{idProduct}=="0089", ENV{PULSE_PROFILE_SET}="sennheiser-gsp670-usb-audio.conf"
-ATTRS{idVendor}=="1395", ATTRS{idProduct}=="008a", ENV{PULSE_PROFILE_SET}="sennheiser-gsp670-usb-audio.conf"
+# GSA-70 dongle with updated firmware
+ATTRS{idVendor}=="1395", ATTRS{idProduct}=="0300", ENV{PULSE_PROFILE_SET}="sennheiser-gsp670-usb-dongle-audio.conf"
+# GSA-70 dongle with older firmware
+ATTRS{idVendor}=="1395", ATTRS{idProduct}=="0089", ENV{PULSE_PROFILE_SET}="sennheiser-gsp670-usb-headset-audio.conf"
+# GSP-670 headset
+ATTRS{idVendor}=="1395", ATTRS{idProduct}=="008a", ENV{PULSE_PROFILE_SET}="sennheiser-gsp670-usb-headset-audio.conf"
