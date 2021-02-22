@@ -62,3 +62,6 @@ pulseaudio --start
 ### Reconnect the dongle
 
 If the dongle is already connected then unplug it and plug it back in again.
+
+## Pipewire
+To make this also work when using pipewire you need to copy the conf files from /usr/share/pulseaudio/alsa-mixer to /usr/share/alsa-card-profile/mixer and also change ENV{PULSE_PROFILE_SET} to ENV{ACP_PROFILE_SET} in the udev rules file.
