@@ -1,0 +1,20 @@
+#!/bin/bash
+
+prefix=$([ "$1" == "" ] && echo "/" || echo "$1")
+
+# delete udev rule
+rm  ${prefix}etc/udev/rules.d/91-pulseaudio-sennheiser-gsp670.rules
+
+# delete PA profiles to old location
+rm ${prefix}usr/share/pulseaudio/alsa-mixer/profile-sets/sennheiser-gsp670-usb-dongle-audio.conf
+rm ${prefix}usr/share/pulseaudio/alsa-mixer/profile-sets/sennheiser-gsp670-usb-headset-audio.conf
+rm ${prefix}usr/share/pulseaudio/alsa-mixer/paths/sennheiser-gsp670-output-main.conf
+rm ${prefix}usr/share/pulseaudio/alsa-mixer/paths/sennheiser-gsp670-output-comm.conf
+rm ${prefix}usr/share/pulseaudio/alsa-mixer/paths/sennheiser-gsp670-input-comm.conf
+
+# delete PA profiles to new location
+rm ${prefix}usr/share/alsa-card-profile/mixer/profile-sets/sennheiser-gsp670-usb-dongle-audio.conf
+rm ${prefix}usr/share/alsa-card-profile/mixer/profile-sets/sennheiser-gsp670-usb-headset-audio.conf
+rm ${prefix}usr/share/alsa-card-profile/mixer/paths/sennheiser-gsp670-output-main.conf
+rm ${prefix}usr/share/alsa-card-profile/mixer/paths/sennheiser-gsp670-output-comm.conf
+rm ${prefix}usr/share/alsa-card-profile/mixer/paths/sennheiser-gsp670-input-comm.conf
