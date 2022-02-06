@@ -62,3 +62,9 @@ pulseaudio --start
 ### Reconnect the dongle
 
 If the dongle is already connected then unplug it and plug it back in again.
+
+### Uninstallation
+Use the `uninstall` script
+```bash
+sudo ./uninstall
+```
