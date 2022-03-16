@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/env bash
+set -xe
 
 prefix=$([ "$1" == "" ] && echo "/" || echo "$1")
 
