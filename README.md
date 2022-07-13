@@ -1,3 +1,11 @@
+# This profile is likely not needed anymore
+
+Linux kernel 5.15 and newer should support the dongle with updated firmware.
+PipeWire 0.3.38 or newer should have the required audio profiles.
+PulseAudio 16.0 or newer should have the required audio profiles.
+
+If you are not running older software than what is written above then you should not use this profile.
+
 # Sennheiser GSP 670 PulseAudio profile
 
 Product page: https://en-us.sennheiser.com/gaming-headset-wireless-gsp-670
